@@ -4,11 +4,13 @@
 	
 TBCxUSID Web Page
 
-Project Structure
+PROJECT STRUCTURE
 
 
 project-root-folder
+
 │
+
 ├── assests
 
 │   ├── Images
