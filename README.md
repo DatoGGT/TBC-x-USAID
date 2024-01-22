@@ -41,44 +41,6 @@ project-root-folder
 └── index.html
 
 
-TBCxUSID Web Page
-
-
-Project Structure
-
-
-project-root-folder
-
-│
-├── assests
-
-│   ├── Images
-
-│   │   ├── tbc.png
-
-│   │   ├── tbclogo.png
-
-│   │   ├── fb.webp
-
-│   │   ├── yt.webp
-
-│   │   └── footertbc.png
-
-│   ├── styles
-
-│   │   ├── index.css
-
-│   │   └── normalize.css
-
-│   └── JavaScripts
-
-│       └── index.js
-
-│
-├── README.md
-
-└── index.html
-
 
 
 Technologies Used
