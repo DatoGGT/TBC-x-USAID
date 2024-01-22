@@ -931,3 +931,14 @@ width: 100px;
     left: 255px !important;
 }
 }
+@media only screen  and (min-width:430px){
+    .TbcPages{
+        position: absolute;
+        left: 220px;
+    }
+    .TbcPages li {
+        padding-left: 70px;
+    
+    }
+
+}
