@@ -1,0 +1,933 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.862);
+    font-family: Arial,Helvetica,sans-serif;
+}
+/* ჰიდდერის ვიზუალი*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:auto;
+    padding:20px 0 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* width: 100%; */
+    background-color:  rgb(29, 29, 32);
+    transition: background-color 0.3s ease-in-out;
+}
+/* ჰიდერის სქროლის სტილი */
+header.scrolled{
+    background-color: rgb(29, 29, 32);
+    opacity: 0.9;
+}
+
+/* თბს ლოგოს სურათისთვის figureს სტილები */
+.TbcLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* თბს ლოგოს სურათის ზომები */
+.TbcLogo img {
+    width: 40%;
+    height: 100%;
+}
+/* თბს span "აკადემია" სტილები */
+.TbcLogo span {
+    font-size: 1.5rem;
+    color: white;
+}
+/* ul li ვიზუალი */
+.TbcPages{
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 50px;
+}
+/* TBC x USAID ს ფერი  */
+.TbcPages :nth-child(3){
+    color: rgb(48, 142, 193);
+}
+/* ul lis ჰოვერზე ფერის შეცვლა როგორც თბს საიტზე */
+.TbcPages li:hover{
+    cursor: pointer;
+    color: rgb(48, 142, 193);
+    transition: 0.3s ease;
+}
+
+/* თბს გუნდის სურათი რომელიც ამ დივის backgroundimg არის */
+.TbcTeamPic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    height: auto;
+    background-image: url("../Images/tbcteam.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* თბს გუნდის სურათის divში  მეორე divi იმისთვის span ელემენტები დავალაგოთ */
+.TbcTeamPicText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+/* span ელემენტის ვიზუალი */
+.TbcTeamPic span {
+    padding-left: 10px;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    color: white;
+    line-height: 1.6em;
+}
+.TbcTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding:30px 0 50px 0;
+    
+}
+/* ეს დივი იმისთვის რომ ამ დივში მყოფი შვილი დივი მოვაქციო ცენტრში */
+.AboutTbcProgram{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    height:auto;
+    padding:0 0 30px 25px;
+}
+/* შვილი დივი რომელიც იკავებს  მშობლის 80%  იმისთვის რომ ტექსტი ისე იყოს 
+როგორც თბს საიტზე */
+.AboutTbcProgramText{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    gap: 30px;
+    padding-top: 30px;
+}
+/* about ტექსტის სტილები */
+.AboutTbcProgramText h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+/* a-href "გაიგე მეტის" სტილები */
+.AboutTbcProgramText a {
+    text-decoration: none;
+    color: rgb(67, 181, 243);
+    font-size: 1.4rem;
+}
+/* "გაიგე მეტის ჰოვერზე ფერის შეცვლა*/
+.AboutTbcProgramText a:hover {
+    color: rgb(166, 166, 166);
+    transition: 0.3s ease;
+}
+/* შემდეგი სექცია თიბისის სასწავლო კურსებისთვის */
+.Courses-Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.353);
+    height: auto;
+    padding-bottom: 40px;
+    gap: 30px;
+}
+.Courses-Container h3 {
+    padding: 30px 0 30px 0;
+    width: 59.5%;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.743);
+
+    
+}
+
+/* ამ კონტეინერში ვალაგებ დამაპულ დივებს */
+#Child-Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 60%;
+    
+}
+/* map ფუნქციიდან მიღებული დივების შიგნითა ელემენტების განლაგება და 
+დივის სტილები*/
+.TbcCourses{
+    display: flex;
+    flex: 1;
+    gap: 90px;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 25%;
+    height: auto;
+    padding: 0 0 20px 0;
+    background-color:transparent;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:   rgba(238, 238, 245, 0.181);
+    
+}
+/* დამაპული დივების შიგნით ტექსტის და სურათის ადგილების გასწორება */
+.TbcCourses-Text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* span ელემენტის დაშორება  და სტილები */
+.TbcCourses-Text  span {
+    padding-left: 20px;
+    font-size: 1rem;
+    color: white;
+}
+/* h2 ელემენტის დაშორება  და სტილები*/
+.TbcCourses-Text  h2 {
+    padding-left: 20px;
+    color: white;
+    font-size: 1.3rem;
+    
+}
+/* სასწავლო კურსის სურათების სტილი */
+.TbcCourses-Text img {
+border-start-start-radius: 10px;
+border-start-end-radius: 10px;
+}
+/* "გაიგე მეტი" დაშორებები */
+.TbcCourses-Link{
+    padding:0 0 20px 20px
+}
+/* "გაიგე მეტი"ს ვიზუალი */
+.TbcCourses-Link a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(67, 181, 243);
+    font-weight: bolder;
+    gap: 10px;
+    
+}
+/* ისრის ვიზუალი */
+.TbcCourses-Link img.arrow {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+    
+}
+/* "გაიგე მეტის" ჰოვერი */
+.TbcCourses-Link a:hover {
+    color: rgb(0, 61, 98);
+    transition: 0.3s ease;
+}
+
+.Slider-Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* სლაიდერ სექციაში ელემენტების განლაგება და სტილები სალაიდერის */
+.Slider{
+    display: flex;
+    height: 370px;
+    overflow-x: scroll;
+    
+}
+.Slider::-webkit-scrollbar{
+    display: none;
+}
+/*  partners დივის ზომები*/
+.partners{
+    width: 100%;
+    height: 170px;
+}
+/* "პროექტის პარტნიორები" განლაგება და სტილები */
+.Slider h2{
+    font-size: 30px;
+    color: #ffffff;
+    padding:25px 0 0 200px;
+}
+/* სლაიდერის სურათების განლაგება */
+.Slider figure{
+    display: flex;
+    justify-content: space-around;
+    /* gap:50px; */
+    align-items: center;
+    width: 100%;
+    flex: none;
+}
+/* სლაიდერის სურათბის ზომები */
+.Slider img {
+    width: 183px;
+    height: 70px;
+}
+
+
+/* მშობელი კონტეინერი ხშირად დასმული კითხვებისთვის და სტილები */
+.QuestionsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 44px 0 44px 0;
+    background-color: rgb(7, 7, 7);
+}
+/* span "ხშირად დასმული კითხვები" - a href "ყველა კითხვა" განლაგება და ზომა */
+.QuestionsCategory {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    padding: 25px 0 25px 0;
+    width: 90%;
+    
+}
+/* "ხშირად დასმული კითხვები" ვიზუალი */
+.QuestionsCategory span {
+    color: white;
+    font-size: 1.5rem;
+}
+/* "ყველა კითხვა ვიზუალი */
+.QuestionsCategory a {
+    color: rgb(67, 181, 243);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* "ყველი კითხვა" ჰოვერზე ფერის შეცვლა */
+.QuestionsCategory a:hover {
+    color: rgb(166, 166, 166);
+    transition: 0.3s ease;
+}
+/* დამაპული დივების(კითხვებისთვის) მშობელი ელემენტის სტილები და განლაგება */
+#AskedQuestionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60.5%;
+    height: auto;
+}
+/* კითხვების და დროფ ისრის განლაგება  დამაპულ დივში*/
+.AskedQuestions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* მშობელი ელემენტი სადაც მოქცეულია accordion სექცია. განლაგება და სტილები*/
+.accordion{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    cursor: pointer;
+    
+    
+}
+/* პასუხების ელემენტი როცა activeა. განლაგება და სტიები */
+.accordion.active .answers{
+    padding-top: 27px;
+    height: auto;
+    display: block;
+    transition: max-height 4s ease-in-out,
+}
+/* ისრის მიმართულება პასუხების გამოჩენის შემდეგ */
+.accordion.active img {
+    transform: rotate(180deg);
+}
+/* კითხვების მშობელი ელემენტის შიგნითა განლაგება */
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* კითხვების ზომა */
+.question h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    
+}
+
+.arrow{
+    width: 13px;
+    height: 13px;
+}
+/* პასუხების ელემენტი სანამ active გახდება */
+.answers{
+    height: 0;
+    display: none;
+    
+}
+/* პასუხების ტექსტის სტილები */
+.answers p {
+    color: white;
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: lighter;
+}
+/* კითხვებს შორის ხაზები */
+.Underline{
+    width: 100%;
+    height: 0.5px;
+    background-color: rgba(86, 80, 80, 0.623);
+}
+/* სლაიდერის მშობელი კონტეინერი */
+.partners {
+    width: 99%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+/* "პროექტის პარტნიორები" სტილი */
+.partners h2 {
+    color: white;
+    padding-left: 300px;
+}
+
+/* სლაიდერის შვილი დივი */
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    height: 70%;
+    align-self: center;
+    position: relative;
+
+}
+
+/* სლაიდერის  კონტენტის დივი */
+.slidesContent {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    height: 100%;
+
+}
+
+
+/* button სტილები */
+.slider button {
+    position: absolute;
+    font-size: 50px;
+    color: #f5f5f5;
+    border: none;
+    background: none;
+    transition: color 0.3s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* button ჰოვერზე ფერის შეცვლა */
+.slider button:hover {
+    color: #a9a9a9;
+}
+
+/* წინა სლაიდერზე გადასვლის */
+.PrevArrow {
+    left: 21px;
+}
+
+/* შემდეგ სლაიდერზე გადასვლის ისარი */
+.NextArrow {
+    right: 36px;
+}
+/* სურათების გაქრობა და შემდგომ ჯავასკრიპტით გამოჩენა */
+.slidesContent figure {
+    display: none;
+}
+
+
+figure.displaySlide {
+
+    display: block;
+    animation: fade 0.8s ease-in-out;
+}
+
+/* სლაიდერის წერტილების სტილები */
+.dots {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dots span {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+/* footerში ელემენტების განლაგება */
+footer{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 31px 0 31px 0;
+    background-color:#121317;
+}
+/* footerის შიგნითა შვილი დივის სტილები რომელიც ალაგებს სურათებს და ტექსტებს*/
+.footerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 65%;
+    margin-top: 30px;
+}
+/* footerში თბც სურათის და ქვედა წარწერების განლაგება */
+.footerTbcImg{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* ' 2023 ყველა უფლება დაცულია' სტილები */
+.footerTbcImg span{
+    color: white;
+    font-size: 1.06rem;
+}
+/* 'წესები და პირობები' სტილები */
+.footerTbcImg small{
+    color: white;
+    font-size: 1rem;
+}
+
+/* თბც ლოგოს სურათის ზომები */
+.footerTbcImg img{
+    width: 136px;
+    height: 50px;
+    
+}
+/* copyright აიქონის განლაგება */
+.footerTbcImg .copyRight{
+    font-size: 0.6rem;
+    position: absolute;
+    left: 255px;
+    
+    
+}
+/* ფეისბუქ იუთუბ აიქონების განლაგება */
+.footerSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+/* youtube-facebook სურათების განლაგება */
+.FB-YT{
+    display: flex;
+    padding-left: 60px;
+    gap: 10px;
+}
+/* youtube-facebook სურათების ზომებიო */
+.FB-YT img {
+    width: 40px;
+    height: 40px;
+}
+
+/* "მოგვწერეთ" button სტილები */
+.footerSocial button{
+width: 160px;
+height: auto;
+padding: 10px;
+border-radius: 7px;
+border-style: none;
+color: white;
+font-weight: bolder;
+font-size: 1rem;
+background-color: rgb(68, 199, 255);
+}
+
+/* Burger menu სტილები */
+#check {
+    display: none;
+}
+.BurgerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+.F-line{
+    width: 21px;
+    height: 3px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+
+}
+.Sec-line{
+    width: 45px;
+    height: 4px;
+    border-radius: 15px;
+
+
+}
+.Last-line{
+    width: 26px;
+    height: 4px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+    
+    
+}
+.LastlineContainer{
+    width: 43px;
+    display: flex;
+    justify-content: end;
+}
+
+.BurgerMenu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+.open{
+    display: none;
+}
+/* mobile devices responsive */
+@media only screen and  (max-width: 610px) {
+
+    /* tbc pages დამალვა 610 პიქსელზე */
+    .TbcPages {
+        display: none;
+    }
+/* ბურგერ მენიუს სტილი და ადგილი */
+    .BurgerMenu {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 1;
+        right: 1;
+        
+        
+    }
+/* ინუთი როცა chekced_ია გამოაჩენს burgermenuში tbcpages */
+    #check:checked~.TbcPages {
+        right: 0;
+    }
+/* input_ის  გამოჩენა */
+.open{
+    display: block;
+    
+}
+/* ბურგერ მენიუს კონტენტის განლაგება და სტილები */
+    .activeMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 300px;
+        background-color: rgb(86, 80, 80);
+    }
+    .activeMenu li {
+        padding: 0 0 0 168px;
+    }
+    /* ბურგერ მენიუს დივები (პატარა ჯოხები) */
+    .F-line{
+        width: 21px;
+        height: 3px;
+        padding-right: 5px;
+        padding-bottom: 1px;
+        border-radius: 15px;
+        background-color: white;
+    
+    }
+    .Sec-line{
+        width: 45px;
+        height: 4px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .Last-line{
+        width: 26px;
+        height: 4px;
+        padding-bottom: 1px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .TbcTeamPic{
+        display: flex;
+        width: auto;
+        height: 200px;
+    }
+    .TbcTeamPicText{
+        position: absolute;
+        top: 155px;
+        left: 0;
+    }
+
+    /* თბც თიმის სურათზე დატანილი წარწერა */
+    .TbcTeamPicText span{
+        display: flex;
+        width: 100%;
+        font-size: 20px;
+    }
+    .AboutTbcProgram{
+        /* width: 100%; */
+        display: flex;
+        /* justify-content: flex-start; */
+    }
+    .AboutTbcProgramText{
+    width: 100%;
+    }
+    .AboutTbcProgramText h1{
+        font-size: 20px;
+    }
+    .Courses-Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Courses-Container h3 {
+        width: 70%;
+        height: auto;
+        font-size: 40px;
+        
+    }
+    .TbcCourses{
+        display: flex;
+        flex-direction: column;
+        
+        max-width: 100%;
+    }
+    .partners{
+        height: 150px;
+    }
+    .partners h2 {
+    padding:  0 0 0 0;
+        gap: 20px;}
+
+.slidesContent{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 50%;
+}
+.slideImg img{
+    padding-top: 15px;
+    width: 100px;
+}
+}
+/* Tablet devices responsive */
+@media only screen and (min-width: 610px) and (max-width: 991px){
+    
+   /* tbc pages დამალვა 610 პიქსელზე */
+.TbcPages {
+    display: none;
+}
+/* ბურგერ მენიუს სტილი და ადგილი */
+.BurgerMenu {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 1;
+    right: 1px;
+    
+    
+}
+/* ინუთი როცა chekced_ია გამოაჩენს burgermenuში tbcpages */
+#check:checked~.TbcPages {
+    right: 0;
+}
+/* input_ის  გამოჩენა */
+.open{
+display: block;
+
+}
+/* ბურგერ მენიუს კონტენტის განლაგება და სტილები */
+.activeMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 490px;
+    background-color: rgb(86, 80, 80);
+}
+.activeMenu li {
+    padding: 0 0 0 168px;
+}
+/* ბურგერ მენიუს დივები (პატარა ჯოხები) */
+.F-line{
+    width: 21px;
+    height: 3px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+    background-color: white;
+
+}
+.Sec-line{
+    width: 45px;
+    height: 4px;
+    border-radius: 15px;
+    background-color: white;
+}
+.Last-line{
+    width: 26px;
+    height: 4px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+    background-color: white;
+}
+.TbcTeam{
+    display: flex;
+    flex-direction: column;
+}
+.TbcTeamPic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+}
+.TbcTeamPicText{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 135px;
+    justify-content: center;
+
+}
+.TbcTeamPicText span{
+    font-size: 20px;
+}
+.AboutTbcProgram{
+    display: flex;
+    
+}
+.AboutTbcProgramText{
+width: 100%;
+}
+.AboutTbcProgramText h1{
+    font-size: 20px;
+}
+.Courses-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Courses-Container h3 {
+    width: 70%;
+    height: auto;
+    font-size: 40px;
+    
+}
+.TbcCourses{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.partners{
+    height: 150px;
+}
+.partners h2 {
+padding:  0 0 0 0;
+gap: 20px;}
+
+.slidesContent{
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+.slideImg img{
+padding-top: 15px;
+width: 100px;
+}
+.partners{
+    width: auto;
+}
+
+.copyRight{
+    left: 104px !important;
+}
+}
+
+/* leptop and desktops responsive */
+
+@media only screen  and (min-width:991px){
+.TbcTeamPic{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    
+}
+.TbcPages li {
+    width: auto;
+}
+.TbcTeamPicText{
+    padding-left: 90px};
+    .TbcTeamPicText span {
+        font-size: 30px;
+    }
+    .AboutTbcProgramText{
+        width: 80%;
+    }
+.AboutTbcProgramText h1 {
+    font-size: 30px;
+    line-height: 1.6;
+}
+.Courses-Container h3 {
+    width: 60%;
+}
+#Child-Container{
+    display: flex;
+    width: 74%;
+}
+.partners{
+    width: 90%;
+}
+.slideImg{
+    display: flex;
+    gap: 10px;
+}
+.slideImg img {
+    width: 250px;
+}
+.slider{
+    margin-left: 150px;
+}
+
+
+
+.copyRight{
+    left: 255px !important;
+}
+}
