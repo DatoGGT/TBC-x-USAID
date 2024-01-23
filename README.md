@@ -9,37 +9,82 @@ PROJECT STRUCTURE
 
 project-root-folder
 
-│
-
-├── assests
-
-│   ├── Images
-
-│   │   ├── tbc.png
-
-│   │   ├── tbclogo.png
-
-│   │   ├── fb.webp
-
-│   │   ├── yt.webp
-
-│   │   └── footertbc.png
-
-│   ├── styles
-
-│   │   ├── index.css
-
-│   │   └── normalize.css
-
-│   └── JavaScripts
-
-│       └── index.js
-
-│
-├── README.md
-
-└── index.html
-
+  ├── assests
+  
+  │   ├── Images
+  
+  │   │   ├── advancedphyton.webp
+ 
+  │   │   ├── arrow.png
+  
+  │   │   ├── blockchain.webp
+  
+  │   │   ├── cyber.webp
+  
+  │   │   ├── devops.webp
+  
+  │   │   ├── downarrow.png
+  
+  │   │   ├── fb.webp
+  
+  │   │   ├── footertbc.png
+  
+  │   │   ├── goverence.webp
+  
+  │   │   ├── iosimg.webp
+  
+  │   │   ├── phytonimg.webp
+  
+  │   │   ├── reactomg.webp
+  
+  │   │   ├── space.webp
+  
+  │   │   ├── spectre.webp
+  
+  │   │   ├── tbc.png
+  
+  │   │   ├── tbclizing.webp
+  
+  │   │   ├── tbclogo.png
+  
+  │   │   ├── tbcteam.webp
+  
+  │   │   ├── tegeta.webp
+  
+  │   │   ├── tnt.webp
+  
+  │   │   ├── tot.webp
+  
+  │   │   ├── ufc.webp
+  
+  │   │   ├── usaid.webp
+  
+  │   │   ├── yt.webp
+  
+ 
+  
+  │   ├── styles
+  
+  │   │   ├── index.css
+  
+  │   │   └── normalize.css
+  
+  │   └── JavaScripts
+  
+  │       ├── index.js
+  
+  │       ├── TbcCourses.js
+  
+  │       ├── Accordion.js
+  
+  │       └── Slider.js
+  
+  ├── index.html
+  
+  ├── README.md
+  
+  └── LICENSE
+  
 
 
 
