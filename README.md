@@ -73,10 +73,6 @@ project-root-folder
   
   │       ├── index.js
   
-  │       ├── TbcCourses.js
-  
-  │       ├── Accordion.js
-  
   │       └── Slider.js
   
   ├── index.html
