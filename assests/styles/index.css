@@ -9,7 +9,8 @@ body {
 /* ჰიდდერის ვიზუალი*/
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 154px;
     align-items: center;
     height:auto;
     padding:20px 0 20px 0;
@@ -643,7 +644,7 @@ background-color: rgb(68, 199, 255);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: auto;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -741,6 +742,10 @@ background-color: rgb(68, 199, 255);
 }
 /* Tablet devices responsive */
 @media only screen and (min-width: 610px) and (max-width: 991px){
+    .TbcLogo{
+        padding-right: 70px;
+
+    }
     
    /* tbc pages დამალვა 610 პიქსელზე */
 .TbcPages {
@@ -882,6 +887,7 @@ width: 100px;
 /* leptop and desktops responsive */
 
 @media only screen  and (min-width:995px){
+
 .TbcTeamPic{
     display: flex;
     height: 300px;
@@ -935,7 +941,10 @@ width: 100px;
 }
 }
 @media only screen  and (min-width:330px) and (max-width:995px){
-    
+    header{
+        display: flex;
+        gap: 50px;
+    }
     .TbcPages li{
         
         padding-right: 220px;
