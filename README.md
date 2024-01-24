@@ -13,15 +13,15 @@ project-root-folder
   
   │   ├── Images
   
-  │   │   ├── advancedphyton.webp
+  │   │   ├── advancedphyton.png
  
   │   │   ├── arrow.png
   
-  │   │   ├── blockchain.webp
+  │   │   ├── blockchain.png
   
-  │   │   ├── cyber.webp
+  │   │   ├── cyber.png
   
-  │   │   ├── devops.webp
+  │   │   ├── devops.png
   
   │   │   ├── downarrow.png
   
@@ -29,13 +29,13 @@ project-root-folder
   
   │   │   ├── footertbc.png
   
-  │   │   ├── goverence.webp
+  │   │   ├── goverence.png
   
-  │   │   ├── iosimg.webp
+  │   │   ├── iosimg.png
   
-  │   │   ├── phytonimg.webp
+  │   │   ├── phytonimg.png
   
-  │   │   ├── reactomg.webp
+  │   │   ├── reactomg.png
   
   │   │   ├── space.webp
   
@@ -53,7 +53,7 @@ project-root-folder
   
   │   │   ├── tnt.webp
   
-  │   │   ├── tot.webp
+  │   │   ├── tot.png
   
   │   │   ├── ufc.webp
   
