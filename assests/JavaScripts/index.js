@@ -6,15 +6,15 @@
 // array სურათებისთვის, ტექსტისთვის და "კურსის დეტალები" ლინკისთვის
 
 const ImgArray = [
-  { imgUrl: './assests/Images/iOSImg.webp', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
-  { imgUrl: './assests/Images/ReactImg.webp', title: 'React', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/react' },
-  { imgUrl: './assests/Images/phytonimg.webp', title: 'Intro to Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-basic' },
-  { imgUrl: './assests/Images/advancedphyton.webp', title: 'Advanced Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-advance' },
-  { imgUrl: './assests/Images/cyber.webp', title: 'Advanced Cybersecurity Course', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-advance' },
-  { imgUrl: './assests/Images/ToT.webp', title: 'ToT - Training of Trainers', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/training-of-trainers' },
-  { imgUrl: './assests/Images/Blockchain.webp', title: 'Blockchain', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/blockchain' },
-  { imgUrl: './assests/Images/Devops.webp', title: 'DevOps', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/devops' },
-  { imgUrl: './assests/Images/goverence.webp', title: 'Information Security Governance', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-basic' },
+  { imgUrl: './assests/Images/iOSImg.png', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
+  { imgUrl: './assests/Images/ReactImg.png', title: 'React', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/react' },
+  { imgUrl: './assests/Images/phytonimg.png', title: 'Intro to Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-basic' },
+  { imgUrl: './assests/Images/advancedphyton.png', title: 'Advanced Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-advance' },
+  { imgUrl: './assests/Images/cyber.png', title: 'Advanced Cybersecurity Course', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-advance' },
+  { imgUrl: './assests/Images/ToT.png', title: 'ToT - Training of Trainers', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/training-of-trainers' },
+  { imgUrl: './assests/Images/Blockchain.png', title: 'Blockchain', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/blockchain' },
+  { imgUrl: './assests/Images/Devops.png', title: 'DevOps', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/devops' },
+  { imgUrl: './assests/Images/goverence.png', title: 'Information Security Governance', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-basic' },
 ];
 
 // Get the container element where the divs will be appended
