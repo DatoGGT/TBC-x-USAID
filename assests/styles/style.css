@@ -9,11 +9,11 @@ body {
 /* ჰიდდერის ვიზუალი*/
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 154px;
     align-items: center;
     height:auto;
-    padding:20px 0 20px 0;
+    padding:20px 0 20px 70px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -99,7 +99,7 @@ header.scrolled{
 /* ეს დივი იმისთვის რომ ამ დივში მყოფი შვილი დივი მოვაქციო ცენტრში */
 .AboutTbcProgram{
     display: flex;
-    width: 80%;
+    width: 77%;
     justify-content: center;
     height:auto;
     padding:0 0 30px 25px;
