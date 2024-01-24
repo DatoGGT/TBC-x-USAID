@@ -115,7 +115,7 @@ Note:
 Ensure an internet connection for proper loading of external resources (stylesheets, images).
 
 Enjoy exploring TBC x USAID web page!
-Feel free to reach out if you encounter any issues or have further questions.
+
 
 
 
