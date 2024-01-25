@@ -232,6 +232,7 @@ border-start-end-radius: 10px;
     justify-content: center;
     flex-direction: column;
     padding: 5px;
+    
 }
 /* "პროექტის პარტნიორები" სტილი */
 .partners h2 {
@@ -577,6 +578,8 @@ background-color: rgb(68, 199, 255);
     /* tbc pages დამალვა 610 პიქსელზე */
     .TbcPages {
         display: none;
+        padding-right: 200px;
+        
     }
 /* ბურგერ მენიუს სტილი და ადგილი */
     .BurgerMenu {
@@ -584,9 +587,26 @@ background-color: rgb(68, 199, 255);
         position: absolute;
         z-index: 1;
         top: 1;
-        right: 1;
+        right: 25px;
+    }
+    .NextArrow{
+        display: none;
+    }
+    .PrevArrow{
+        display: none;
+    }
+    
+
+    .partners{
+        height: 210px !important;
         
-        
+    }
+
+    .slidesContent{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 2px !important;
     }
 /* ინუთი როცა chekced_ია გამოაჩენს burgermenuში tbcpages */
     #check:checked~.TbcPages {
@@ -706,6 +726,7 @@ background-color: rgb(68, 199, 255);
 
     }
     
+    
    /* tbc pages დამალვა 610 პიქსელზე */
 .TbcPages {
     display: none;
@@ -716,7 +737,7 @@ background-color: rgb(68, 199, 255);
     position: absolute;
     z-index: 1;
     top: 1;
-    right: 1px;
+    right: 66px;
     
     
 }
@@ -904,9 +925,8 @@ width: 100px;
         display: flex;
         gap: 50px;
     }
-    .TbcPages li{
-        
-        padding-right: 220px;
-        
+    .TbcPages{
+        right: 1;
     }
+    
 }
