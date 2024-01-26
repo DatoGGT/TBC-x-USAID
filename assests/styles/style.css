@@ -581,6 +581,14 @@ background-color: rgb(68, 199, 255);
         padding-right: 200px;
         
     }
+    /* slider arrow გაქრობა */
+    .NextArrow{
+        display: none;
+    }
+    .PrevArrow{
+        display: none;
+    }
+    
 /* ბურგერ მენიუს სტილი და ადგილი */
     .BurgerMenu {
         display: flex;
@@ -712,12 +720,6 @@ background-color: rgb(68, 199, 255);
     padding-top: 15px;
     width: 100px;
 }
-}
-.NextArrow{
-    display: none;
-}
-.PrevArrow{
-    display: none;
 }
 
 /* Tablet devices responsive */
