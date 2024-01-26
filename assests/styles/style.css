@@ -589,13 +589,7 @@ background-color: rgb(68, 199, 255);
         top: 1;
         right: 25px;
     }
-    .NextArrow{
-        display: none;
-    }
-    .PrevArrow{
-        display: none;
-    }
-    
+
 
     .partners{
         height: 210px !important;
@@ -719,6 +713,13 @@ background-color: rgb(68, 199, 255);
     width: 100px;
 }
 }
+.NextArrow{
+    display: none;
+}
+.PrevArrow{
+    display: none;
+}
+
 /* Tablet devices responsive */
 @media only screen and (min-width: 610px) and (max-width: 991px){
     .TbcLogo{
