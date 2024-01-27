@@ -588,7 +588,12 @@ background-color: rgb(68, 199, 255);
     .PrevArrow{
         display: none;
     }
-    
+    .QuestionsCategory span  {
+        font-size: 15px;
+    }
+    .QuestionsCategory a  {
+        font-size: 15px;
+    }
 /* ბურგერ მენიუს სტილი და ადგილი */
     .BurgerMenu {
         display: flex;
@@ -602,6 +607,9 @@ background-color: rgb(68, 199, 255);
     .partners{
         height: 210px !important;
         
+    }
+    .partners h2 {
+        font-size: 17px;
     }
 
     .slidesContent{

@@ -1,6 +1,8 @@
 "use strict";
 
 // slider_ის ლოგიკა
+
+
 // slider სურათების ერეი
 const images = [
     "./assests/Images/usaid.webp",
@@ -105,4 +107,35 @@ const images = [
     });
   });
   
+  const isTouchDevice = () => {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+  };
+  
+  const scrollOnTouch = () => {
+    if (window.innerWidth <= 610 && isTouchDevice()) {
+      let touchStartX = 0;
+      let touchEndX = 0;
+  
+      slidesCont.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      });
+  
+      slidesCont.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+  
+        // Adjust the sensitivity based on your needs
+        const sensitivity = 50;
+  
+        if (touchStartX - touchEndX > sensitivity) {
+          // Swipe left, scroll to the next set of slides
+          nextSlide();
+        } else if (touchEndX - touchStartX > sensitivity) {
+          // Swipe right, scroll to the previous set of slides
+          prevSlide();
+        }
+      });
+    }
+  };
+  
+  document.addEventListener('DOMContentLoaded', scrollOnTouch);
   
