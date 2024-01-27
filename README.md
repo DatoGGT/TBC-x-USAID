@@ -93,21 +93,24 @@ top when clicking on  navigation item (TBC x USAID) and allows slider to work on
 
 Meta Tags: Used for SEO purposes, including title, description, keywords, and author meta tags.
 
-
 Responsive Design: The project uses media queries to ensure a responsive design for various screen sizes.
 
 
 
-How to Run the Project:
+HOW TO RUN THE PROJECT:
 
 Clone the Repository:
 git clone --> https://github.com/DatoGGT/TBC-x-USAID.git
 
+
 Open the Project Folder:
+
 
 cd  TBC-X-USAID
 
+
 Open index.html in a Web Browser:
+
 Double-click on the index.html file, or
 Open the file using your preferred web browser.
 
