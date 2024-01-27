@@ -97,14 +97,14 @@ Responsive Design: The project uses media queries to ensure a responsive design 
 
 
 
+
 HOW TO RUN THE PROJECT:
 
 Clone the Repository:
 git clone --> https://github.com/DatoGGT/TBC-x-USAID.git
 
 
-Open the Project Folder:
-
+Navigate to the Project Directory
 
 cd  TBC-X-USAID
 
