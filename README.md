@@ -82,6 +82,11 @@ PROJECT STRUCTURE:
 
 
 
+
+
+
+
+
 Technologies Used:
 
 HTML5: Provides the structure of the web page.
@@ -94,6 +99,14 @@ top when clicking on  navigation item (TBC x USAID) and allows slider to work on
 Meta Tags: Used for SEO purposes, including title, description, keywords, and author meta tags.
 
 Responsive Design: The project uses media queries to ensure a responsive design for various screen sizes.
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +126,13 @@ Open index.html in a Web Browser:
 
 Double-click on the index.html file, or
 Open the file using your preferred web browser.
+
+
+
+
+
+
+
 
 
 
