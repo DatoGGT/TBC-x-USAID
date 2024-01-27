@@ -107,35 +107,40 @@ const images = [
     });
   });
   
+  // ვამოწმებ მოწყობილობას თუ აქვს touch ფუნქცია
   const isTouchDevice = () => {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
   };
   
+  // touch სქროლის ფუნქცია
   const scrollOnTouch = () => {
+    // ვამოწმებ თუ მოწყობილობის ზომა მეტია ან ტოლი 610 პიქსელზე და თუ აქვს 
+    // touch ფუნქცია
     if (window.innerWidth <= 610 && isTouchDevice()) {
       let touchStartX = 0;
       let touchEndX = 0;
-  
+  // ვადებ ივენთს რომელიც აკვირდება შეხების საწყის პოზიციას
       slidesCont.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
       });
-  
+  // ვადებ ივენთს რომელიც აკვირდება შეხების ბოლო პოზიციას
       slidesCont.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].clientX;
   
-        // Adjust the sensitivity based on your needs
+        // სლაიდზე გადასვლის მგრძნობელობის "სიჩქარე"
         const sensitivity = 50;
-  
+  // შემდეგ სლაიდზე გასვლა
         if (touchStartX - touchEndX > sensitivity) {
-          // Swipe left, scroll to the next set of slides
+          
           nextSlide();
+          // უკანა სლაიდზე გადასვლა
         } else if (touchEndX - touchStartX > sensitivity) {
-          // Swipe right, scroll to the previous set of slides
+    
           prevSlide();
         }
       });
     }
   };
-  
+  // ივენთი რომელიც დომის ჩატვირთვისას უშვებს ავტომატურად ამ ფუნქციას მოქმედებაში
   document.addEventListener('DOMContentLoaded', scrollOnTouch);
   

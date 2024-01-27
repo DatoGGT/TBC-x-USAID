@@ -6,7 +6,7 @@
 // array სურათებისთვის, ტექსტისთვის და "კურსის დეტალები" ლინკისთვის
 
 const ImgArray = [
-  { imgUrl: './assests/Images/iOSImg.png', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
+  { imgUrl: './assests/Images/ios.png', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
   { imgUrl: './assests/Images/ReactImg.png', title: 'React', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/react' },
   { imgUrl: './assests/Images/phytonimg.png', title: 'Intro to Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-basic' },
   { imgUrl: './assests/Images/advancedphyton.png', title: 'Advanced Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-advance' },
