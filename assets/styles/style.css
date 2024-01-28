@@ -575,6 +575,10 @@ background-color: rgb(68, 199, 255);
     font-weight: bolder;
     
 }
+.mail:hover{
+    cursor: pointer;
+    background-color: #c0bfbf;
+}
 /* mobile devices responsive */
 @media only screen and  (max-width: 610px) {
 
