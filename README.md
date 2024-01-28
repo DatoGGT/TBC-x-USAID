@@ -82,6 +82,11 @@ PROJECT STRUCTURE:
 
 
 
+
+
+
+
+
 Technologies Used:
 
 HTML5: Provides the structure of the web page.
@@ -89,33 +94,55 @@ HTML5: Provides the structure of the web page.
 CSS3: Used for styling the web page and ensuring a responsive design.
 
 JavaScript: Enhances the interactivity of the web page, such as scrolling to the 
+
 top when clicking on  navigation item (TBC x USAID) and allows slider to work on the sensor.
 
-Meta Tags: Used for SEO purposes, including title, description, keywords, and author meta tags.
+top when clicking on  navigation item (TBC x USAID),allows slider to work on the sensor on smaller screens,Dynamically generates HTML elements for each course,Creates an accordion-style interface for displaying frequently asked questions and you can see answers to all questions. makeing the header transparent on scroll, and when scrolling on smaller screens, you will see the burgermenu.
 
+
+Meta Tags: Used for SEO purposes, including title, description, keywords, and author meta tags.
 
 Responsive Design: The project uses media queries to ensure a responsive design for various screen sizes.
 
 
 
-How to Run the Project:
+
+
+
+
+
+
+
+
+
+HOW TO RUN THE PROJECT:
 
 Clone the Repository:
 git clone --> https://github.com/DatoGGT/TBC-x-USAID.git
 
-Open the Project Folder:
+
+Navigate to the Project Directory
 
 cd  TBC-X-USAID
 
+
 Open index.html in a Web Browser:
+
 Double-click on the index.html file, or
 Open the file using your preferred web browser.
 
 
 
+
+
+
+
+
+
+
 Explore the Website:
 
-Click on links to  view courses and frequently asked questions.
+Click on links to  view courses and answers on frequently asked questions .
 
 
 Enjoy exploring TBC x USAID web page!
