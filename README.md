@@ -87,7 +87,7 @@ PROJECT STRUCTURE:
 
 
 
-Technologies Used:
+TECHNOLOGIES USED:
 
 HTML5: Provides the structure of the web page.
 
