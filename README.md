@@ -93,10 +93,8 @@ HTML5: Provides the structure of the web page.
 
 CSS3: Used for styling the web page and ensuring a responsive design.
 
+
 JavaScript: Enhances the interactivity of the web page, such as scrolling to the 
-
-top when clicking on  navigation item (TBC x USAID) and allows slider to work on the sensor.
-
 top when clicking on  navigation item (TBC x USAID),allows slider to work on the sensor on smaller screens,Dynamically generates HTML elements for each course,Creates an accordion-style interface for displaying frequently asked questions and you can see answers to all questions. makeing the header transparent on scroll, and when scrolling on smaller screens, you will see the burgermenu.
 
 
