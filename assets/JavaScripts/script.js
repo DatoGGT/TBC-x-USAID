@@ -6,15 +6,15 @@
 // array სურათებისთვის, ტექსტისთვის და "კურსის დეტალები" ლინკისთვის
 
 const ImgArray = [
-  { imgUrl: './assests/Images/ios.png', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
-  { imgUrl: './assests/Images/ReactImg.png', title: 'React', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/react' },
-  { imgUrl: './assests/Images/phytonimg.png', title: 'Intro to Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-basic' },
-  { imgUrl: './assests/Images/advancedphyton.png', title: 'Advanced Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-advance' },
-  { imgUrl: './assests/Images/cyber.png', title: 'Advanced Cybersecurity Course', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-advance' },
-  { imgUrl: './assests/Images/ToT.png', title: 'ToT - Training of Trainers', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/training-of-trainers' },
-  { imgUrl: './assests/Images/Blockchain.png', title: 'Blockchain', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/blockchain' },
-  { imgUrl: './assests/Images/Devops.png', title: 'DevOps', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/devops' },
-  { imgUrl: './assests/Images/goverence.png', title: 'Information Security Governance', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-basic' },
+  { imgUrl: './assets/Images/ios.png', title: 'iOS Development', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/ios-development' },
+  { imgUrl: './assets/Images/ReactImg.png', title: 'React', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/react' },
+  { imgUrl: './assets/Images/phytonimg.png', title: 'Intro to Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-basic' },
+  { imgUrl: './assets/Images/advancedphyton.png', title: 'Advanced Phyton', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/python-advance' },
+  { imgUrl: './assets/Images/cyber.png', title: 'Advanced Cybersecurity Course', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-advance' },
+  { imgUrl: './assets/Images/ToT.png', title: 'ToT - Training of Trainers', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/training-of-trainers' },
+  { imgUrl: './assets/Images/Blockchain.png', title: 'Blockchain', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/blockchain' },
+  { imgUrl: './assets/Images/Devops.png', title: 'DevOps', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/devops' },
+  { imgUrl: './assets/Images/goverence.png', title: 'Information Security Governance', text: 'რეგისტრაცია დასრულებულია', link: 'https://www.tbcacademy.ge/usaid/information-security-basic' },
 ];
 
 // Get the container element where the divs will be appended
@@ -30,7 +30,7 @@ const divsInSection = ImgArray.map(({ imgUrl, title, text, link }) => `
   <span>${text}</span>
   </div>
   <div class="TbcCourses-Link">
-  <a href="${link}"> <img class="arrow" src="./assests/Images/arrow.png" alt="arrow">კურსის დეტალები </a>
+  <a href="${link}"> <img class="arrow" src="./assets/Images/arrow.png" alt="arrow">კურსის დეტალები </a>
   </div>
   </article>
 `).join('');
@@ -94,7 +94,7 @@ const answers = [
   <div class="accordion">
   <div class="question">
   <h3>${question}</h3>
-  <img src="./assests/Images/downarrow.png" alt="img" class="arrow">
+  <img src="./assets/Images/downarrow.png" alt="img" class="arrow">
   </div>
   <div class="answers">
   <p>${answer}</p></div>

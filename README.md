@@ -8,7 +8,7 @@
 PROJECT STRUCTURE:
 
 
-  ├── assests
+  ├── assets
   
   │   ├── Images
   
@@ -89,7 +89,7 @@ HTML5: Provides the structure of the web page.
 CSS3: Used for styling the web page and ensuring a responsive design.
 
 JavaScript: Enhances the interactivity of the web page, such as scrolling to the 
-top when clicking on  navigation item (TBC x USAID) and allows slider to work on the senor.
+top when clicking on  navigation item (TBC x USAID) and allows slider to work on the sensor.
 
 Meta Tags: Used for SEO purposes, including title, description, keywords, and author meta tags.
 

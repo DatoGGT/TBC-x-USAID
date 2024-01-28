@@ -65,7 +65,6 @@ header.scrolled{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 200px;
     height: auto;
     background-image: url("../Images/tbcteam.webp");
     background-repeat: no-repeat;
@@ -75,6 +74,9 @@ header.scrolled{
 /* თბს გუნდის სურათის divში  მეორე divi იმისთვის span ელემენტები დავალაგოთ */
 .TbcTeamPicText {
     display: flex;
+    width: 61%;
+    margin: 0 auto;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
     
@@ -565,15 +567,24 @@ background-color: rgb(68, 199, 255);
 .open{
     display: none;
 }
+.PagesList {
+    display: flex;
+    gap: 53px;
+    list-style: none;
+    color: white;
+    font-weight: bolder;
+    
+}
 /* mobile devices responsive */
 @media only screen and  (max-width: 610px) {
 
     /* tbc pages დამალვა 610 პიქსელზე */
     .TbcPages {
         display: none;
-        padding-right: 200px;
+        padding-right: 50px;
         
     }
+
     /* slider arrow გაქრობა */
     .NextArrow{
         display: none;
@@ -624,8 +635,8 @@ background-color: rgb(68, 199, 255);
     .activeMenu {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: end;
+        padding-top: 115px;
         width: auto;
         height: 100vh;
         position: fixed;
@@ -633,9 +644,7 @@ background-color: rgb(68, 199, 255);
         left: 160px;
         background-color: rgb(86, 80, 80);
     }
-    .activeMenu li {
-        padding: 0 0 0 168px;
-    }
+
     /* ბურგერ მენიუს დივები (პატარა ჯოხები) */
     .F-line{
         width: 21px;
@@ -665,15 +674,14 @@ background-color: rgb(68, 199, 255);
         height: 200px;
     }
     .TbcTeamPicText{
-        position: absolute;
-        top: 155px;
-        left: 0;
+    display: flex;
+    justify-content: start;
     }
 
     /* თბც თიმის სურათზე დატანილი წარწერა */
     .TbcTeamPicText span{
         display: flex;
-        width: 100%;
+        width: 95%;
         font-size: 20px;
     }
     .AboutTbcProgram{
@@ -705,6 +713,8 @@ background-color: rgb(68, 199, 255);
         max-width: 100%;
     }
     .partners{
+        width: auto;
+        /* background-color: aqua; */
         height: 150px;
     }
     .partners h2 {
@@ -741,7 +751,6 @@ background-color: rgb(68, 199, 255);
 @media only screen and (min-width: 610px) and (max-width: 991px){
     .TbcLogo{
         padding-right: 70px;
-
     }
     
     
@@ -768,21 +777,24 @@ background-color: rgb(68, 199, 255);
 display: block;
 
 }
+
+.TbcPages li{
+font-size: 30px;
+}
 /* ბურგერ მენიუს კონტენტის განლაგება და სტილები */
 .TbcPages.activeMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding-top: 110px;
+    width: 300px;
+    height: 100%;
     position: fixed;
     top: 0;
-    left: 350px;
+    right: 0px;
     background-color: rgb(86, 80, 80);
 }
-.activeMenu li {
-    padding: 0 0 0 138px;
-}
+
 /* ბურგერ მენიუს დივები (პატარა ჯოხები) */
 .F-line{
     width: 21px;
@@ -813,19 +825,17 @@ display: block;
 .TbcTeamPic{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
+    justify-content: start;
     width: 100%;
     height: 150px;
     background-size: cover;
 }
 .TbcTeamPicText{
     display: flex;
+    width: 80%;
     flex-direction: column;
-    position: absolute;
-    top: 135px;
-    justify-content: center;
+    margin: 0 auto;
+    padding-top: 28px;
 
 }
 .TbcTeamPicText span{
@@ -870,17 +880,17 @@ gap: 20px;
 justify-content: center;
 }
 .slideImg img{
-padding-top: 15px;
-width: 100px;
+width: 150px;
 }
 .partners{
     width: auto;
 }
+
 }
 
 /* leptop and desktops responsive */
 
-@media only screen  and (min-width:995px){
+@media only screen  and (min-width:991px){
 
 .TbcTeamPic{
     display: flex;
@@ -895,8 +905,7 @@ width: 100px;
     width: auto;
     padding: 0 0 0 0;
 }
-.TbcTeamPicText{
-    padding-left: 90px};
+
     .TbcTeamPicText span {
         font-size: 30px;
     }
@@ -915,7 +924,7 @@ width: 100px;
     width: 74%;
 }
 .partners{
-    width: 90%;
+    width: 99%;
 }
 .slideImg{
     display: flex;
@@ -924,9 +933,13 @@ width: 100px;
 .slideImg img {
     width: 250px;
 }
-.slider{
-    margin-left: 150px;
+
+.slidesContent{
+    display: flex;
+    gap: 80px;
+    
 }
+
 
 }
 @media only screen  and (min-width:330px) and (max-width:995px){
@@ -937,5 +950,11 @@ width: 100px;
     .TbcPages{
         right: 1;
     }
-    
+
+}
+/* for galaxy fold */
+@media only screen and (max-width:281px){
+    .TbcPages{
+        padding-right: 17px;
+    }    
 }

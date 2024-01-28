@@ -5,13 +5,13 @@
 
 // slider სურათების ერეი
 const images = [
-    "./assests/Images/usaid.webp",
-    "./assests/Images/space.webp",
-    "./assests/Images/tnt.webp",
-    "./assests/Images/Tegeta.webp",
-    "./assests/Images/spectre.webp",
-    "./assests/Images/tbclizing.webp",
-    "./assests/Images/ufc.webp",
+    "./assets/Images/usaid.webp",
+    "./assets/Images/space.webp",
+    "./assets/Images/tnt.webp",
+    "./assets/Images/Tegeta.webp",
+    "./assets/Images/spectre.webp",
+    "./assets/Images/tbclizing.webp",
+    "./assets/Images/ufc.webp",
     ,
   ];
   
