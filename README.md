@@ -138,7 +138,7 @@ Open the file using your preferred web browser.
 
 Explore the Website:
 
-Click on links to  view courses and frequently asked questions.
+Click on links to  view courses and answers on frequently asked questions .
 
 
 Enjoy exploring TBC x USAID web page!
